@@ -1,0 +1,11 @@
+def array3d():
+    x =int(input("Enter X-axis dimension:"))
+    y= int(input("Enter Y-axis dimension:"))
+    z= int(input("Enter Z-axis dimension:"))
+    n= int(input("Enter the axis length:"))
+    combinations =[[i,j,k] for i in range(x+1) for j in range(y+1) for k in range(z+1) if sum([i,j,k])!=n]
+    return combinations 
+
+if __name__ == "__main__":
+    result=array3d()
+    print(result)
